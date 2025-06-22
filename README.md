@@ -1,146 +1,156 @@
 # 🛒 Inazuma Store
 
-**Inazuma Store** é uma plataforma de e-commerce moderna e intuitiva, projetada para oferecer uma excelente experiência de compra online. O projeto inclui funcionalidades completas como gerenciamento de produtos, carrinho de compras, favoritos, rastreamento de pedidos, cupons de desconto e um painel administrativo.
+**Inazuma Store** é uma plataforma de e-commerce moderna, intuitiva e completa, desenvolvida para oferecer uma excelente experiência de compra online. O sistema contempla funcionalidades essenciais como gerenciamento de produtos, carrinho de compras, favoritos, rastreamento de pedidos, cupons de desconto e um painel administrativo robusto.
 
-## 🌍 Acesse Online
-🔗 [Inazuma Store - Versão Online](https://inazuma-store.netlify.app/)  
+---
 
-✅ **Não é necessário login** para explorar a loja!  
+## 🌐 Acesse Online
 
-⚠️ **Nota:** A versão online da Inazuma Store possui apenas **dados estáticos** para pedidos, usuários e cupons.  
-Isso significa que algumas funcionalidades **não estão disponíveis**, pois dependem do back-end.  
+🔗 [Inazuma Store - Versão Online](https://inazuma-store.netlify.app/)
 
-Você ainda pode visualizar as telas, testar a navegação e explorar a experiência do usuário! 🚀  
+* ✅ **Acesso livre:** Não é necessário login para explorar a loja.
+* ⚠️ **Nota:** A versão online utiliza **dados estáticos** para pedidos, usuários e cupons, e não contempla integrações em tempo real com o backend.
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
-### **🖥️ Frontend**
-- ⚛️ **React.js** (estrutura da interface)
-- 🔄 **Redux Toolkit** (gerenciamento de estado global)
-- 🚏 **React Router DOM** (navegação SPA)
-- 🎨 **Bootstrap** (estilização moderna e responsiva)
-- 🗺️ **Leaflet** (rastreamento de pedidos com mapa interativo)
+### **Frontend**
 
-### **🖥️ Backend**
-- 🟢 **Node.js + Express** (API REST)
-- 🛢️ **MySQL** (banco de dados relacional)
-- 🔑 **JWT** (autenticação segura via token)
-- 📧 **Nodemailer** (envio de emails automáticos)
-- 🔐 **bcryptjs** (criptografia de senhas)
+* ⚛️ React.js
+* ⚖️ Redux Toolkit
+* 🛍️ React Router DOM
+* 🎨 Bootstrap
+* 🗺️ Leaflet (mapas interativos para rastreio)
+
+### **Backend**
+
+* 🔴 Node.js + Express
+* 📂 MySQL
+* 🔐 JWT (autenticação via token)
+* 📧 Nodemailer
+* 🔒 bcryptjs
 
 ---
 
 ## 🎯 Funcionalidades
 
-### 🛍️ **Produtos**
-- Listagem de produtos em destaque
-- Filtragem por categoria
-- Pesquisa por nome ou palavra-chave
+### 🛍️ Produtos
 
-### ❤️ **Favoritos**
-- Adição e remoção de produtos favoritos
-- Persistência dos favoritos para usuários autenticados
+* Listagem e destaques
+* Filtro por categoria
+* Busca por nome ou palavra-chave
 
-### 🛒 **Carrinho de Compras**
-- Adição e remoção de produtos
-- Atualização de quantidades
-- Cálculo automático do total com cupons
+### ❤️ Favoritos
 
-### 🧑‍💼 **Área do Usuário**
-- Edição de perfil
-- Cadastro e gestão de endereços
+* Adição/remoção de produtos favoritos
+* Persistência para usuários autenticados
 
-### 📦 **Pedidos e Rastreamento**
-- Listagem dos pedidos do usuário
-- Detalhes completos de cada pedido
-- Rastreamento com status + localização (Leaflet)
+### 🛒 Carrinho
 
-### 🎟️ **Cupons de Desconto**
-- Aplicação de cupons válidos na finalização da compra
-- Validação em tempo real
+* Adicionar/remover produtos
+* Atualizar quantidades
+* Cálculo com cupons
 
-### 🔐 **Autenticação**
-- Login/registro com JWT
-- Criptografia segura de senhas
-- Validação de tokens
+### 🧑‍💼 Perfil do Usuário
+
+* Edição de dados
+* Cadastro/gestão de endereços
+
+### 📦 Pedidos e Rastreamento
+
+* Visualização de pedidos
+* Detalhamento completo
+* Rastreamento em tempo real via mapa (Leaflet)
+
+### 🎟️ Cupons
+
+* Aplicação de cupons válidos
+* Validação em tempo real
+
+### 🔐 Autenticação
+
+* Login e cadastro com JWT
+* Criptografia segura de senhas
+* Validação e expiração de token
 
 ---
 
 ## 🛠️ Painel Administrativo
 
-O painel administrativo oferece controle total da loja, acessível apenas por usuários autenticados com permissão de administrador.
+Funcionalidades exclusivas para administradores:
 
-### Funcionalidades:
+* 📦 Gerenciamento de Pedidos
+* 📊 Dashboard dinâmico com gráficos
+* 📂 Listagem e filtros por status
+* 🧑‍💼 Gestão de usuários
+* 🚚 Modal de Rastreamento de Pedidos
 
-- 📦 Gerenciamento de Pedidos
-- 📊 Dashboard com gráficos dinâmicos
-- 📁 Listagem e filtro de Pedidos
-- 🧑 Gestão de Usuários
-- 🚚 **Modal de Gerenciamento de Rastreamento**  
-  - Alterar status de envio  
-  - Atualizar localização em tempo real  
+  * Atualização de status
+  * Localização em tempo real
 
 ---
 
 ## 🧑‍💻 Painel do Vendedor
 
-O painel do vendedor permite que cada vendedor gerencie seus próprios produtos de forma eficiente e autônoma.
+Permite o gerenciamento independente de produtos pelos vendedores:
 
-### Funcionalidades:
-
-- 📦 **Listagem de Produtos Cadastrados**
-- ➕ **Cadastro de Novo Produto**
-- ✏️ **Edição de Produto Existente**
-- ❌ **Remoção de Produto**
-- 📈 **Visualização de Detalhes do Produto** com layout moderno
-- 🛒 **Integração com o sistema de pedidos** (em desenvolvimento)
-- 🔍 **Interface otimizada e responsiva**
+* 📦 Listagem de Produtos
+* ➕ Cadastro de Produtos
+* ✏️ Edição de Produtos
+* ❌ Remoção de Produtos
+* 📊 Detalhes com layout responsivo
+* 🛒 Integração com Pedidos (em desenvolvimento)
 
 ---
 
 ## 🚀 Como Rodar o Projeto
 
-### **1️⃣ Clonar o Repositório**
-```sh
+### 1. Clonar o Repositório
+
+```bash
 git clone https://github.com/seu-usuario/inazuma-store.git
 cd inazuma-store
 ```
 
-### **2️⃣ Instalar Dependências do Frontend**
-```sh
+### 2. Instalar Dependências do Frontend
+
+```bash
 npm install
 ```
 
-### **3️⃣ Rodar o Frontend**
-```sh
+### 3. Rodar o Frontend
+
+```bash
 npm start
 ```
 
-### **4️⃣ Configurar o Backend**
-No diretório `back-end`, crie um arquivo `.env` e adicione as seguintes variáveis de ambiente:
+### 4. Configurar o Backend
 
-```sh
+No diretório `back-end`, crie um arquivo `.env` com as variáveis:
+
+```env
 DB_HOST=
 DB_NAME=inazuma_store
 DB_USER=
 DB_PASS=
 JWT_SECRET=
 
-USER_EMAIL=""
+USER_EMAIL=
 PASSWORD_EMAIL=
-HOST_EMAIL=""
+HOST_EMAIL=
 PORT_EMAIL=
-
 ```
-Preencha os valores de acordo com suas credenciais.
 
-### **5️⃣ Rodar o Backend**
-```sh
+### 5. Rodar o Backend
+
+```bash
 cd back-end
 node server.js
 ```
 
-## Licença
+---
+
+## 📄 Licença
+
 Este projeto é open-source e está sob a licença [MIT](LICENSE).
